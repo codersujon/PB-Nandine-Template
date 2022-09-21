@@ -1,0 +1,95 @@
+@use '../abstracts/mixins'as *;
+@use '../abstracts/variables'as *;
+
+/*
+************
+*************************
+22. Header
+******************************************************* 
+*************************************************************** */
+
+.header {
+    height: 800px;
+    position: relative;
+
+    &__content {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: $white;
+
+        & h1 {
+            color: $white;
+
+            &>span {
+                color: $theme-color;
+                font-weight: 600;
+            }
+        }
+
+        & p {
+            padding: 30px 25px;
+            color: $white;
+        }
+    }
+
+    &__menu {
+        width: 100%;
+        z-index: 10;
+
+        & .logo {
+            width: 80%;
+        }
+    }
+}
+
+.menu-bg {
+    background-color: rgba(57, 56, 56, 0.4);
+}
+
+.main-menu {
+    & ul {
+        & li {
+            display: inline-block;
+            margin-left: 22px;
+
+            & a {
+                display: block;
+                font-size: 14px;
+                color: $white;
+                text-transform: uppercase;
+                font-weight: 500;
+                transition: .3s;
+
+                &:hover {
+                    color: $theme-color;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+
+// Button
+.nan-btn {
+    display: inline-block;
+    padding: 15px 45px;
+    background: $theme-color;
+    font-size: 24px;
+    font-weight: 500;
+    border: 2px solid $theme-color;
+    box-shadow: inset 0 0 0 0 $white;
+    transition: .4s ease-in-out;
+    outline: none;
+
+    &:hover {
+        box-shadow: inset 300px 0 0 0 $white;
+        color: $theme-color;
+        cursor: pointer;
+    }
+}

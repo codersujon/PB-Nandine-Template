@@ -1,0 +1,23 @@
+@use '../abstracts/mixins'as *;
+@use '../abstracts/variables'as *;
+
+
+.footer {
+    & .socials {
+        & a {
+            padding: 9px;
+            font-size: 18px;
+            color: $white;
+            transition: .3s;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    & p {
+        margin-bottom: 0;
+        color: $white;
+    }
+}
