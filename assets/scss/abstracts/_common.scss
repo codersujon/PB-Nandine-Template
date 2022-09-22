@@ -122,7 +122,7 @@ h4,
 h5,
 h6 {
     font-family: $montserrat;
-    color: $heading-color;
+    color: $black;
     margin-top: 0px;
     font-weight: 500;
     text-transform: capitalize;
@@ -424,6 +424,10 @@ textarea:focus::placeholder {
 
 .theme-bg {
     background: $theme-color;
+}
+
+.gray-bg{
+    background: $gray;
 }
 
 

@@ -125,7 +125,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  color: #000;
+  color: #1a213e;
   margin-top: 0px;
   font-weight: 500;
   text-transform: capitalize;
@@ -1655,6 +1655,10 @@ textarea:focus::placeholder {
   background: #fe320a;
 }
 
+.gray-bg {
+  background: #f3f3f3;
+}
+
 /* <<<<<<<    Color     >>>>>>>>> */
 .white-color {
   color: #fff;
@@ -1757,7 +1761,7 @@ textarea:focus::placeholder {
 *************************************************************** */
 .section-title {
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 .section-title h2 {
   font-size: 30px;
@@ -1768,7 +1772,7 @@ textarea:focus::placeholder {
 .section-title h2::before {
   position: absolute;
   content: "";
-  width: 15%;
+  width: 13%;
   height: 2px;
   background-color: #fe320a;
   left: 0;
