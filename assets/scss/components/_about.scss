@@ -1,0 +1,75 @@
+@use '../abstracts/mixins'as *;
+@use '../abstracts/variables'as *;
+
+/*
+************
+*************************
+22. About
+******************************************************* 
+*************************************************************** */
+.about {
+    &__content {
+        &__right {
+            & h3 {
+                font-size: 26;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &__btn {
+        & a {
+            color: $white;
+        }
+    }
+
+    &__img {
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+            & .about__socials {
+                display: block;
+                transition: .3s;
+                -webkit-transition: .3s;
+                -moz-transition: .3s;
+                -ms-transition: .3s;
+                -o-transition: .3s;
+}
+        }
+    }
+
+    &__socials {
+        position: absolute;
+        background-color: rgba(0, 0, 0, .6);
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        padding: 10px 0;
+
+        display: none;
+
+        & h3 {
+            font-weight: 600;
+            font-size: 26px;
+        }
+
+        & a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            color: $white;
+            background-color: $grey;
+            font-size: 18px;
+            border-radius: 50%;
+            margin: 5px;
+            display: inline-block;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                background-color: $theme-color;
+                color: $white;
+            }
+        }
+    }
+}

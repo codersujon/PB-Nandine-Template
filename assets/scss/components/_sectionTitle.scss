@@ -1,0 +1,49 @@
+@use '../abstracts/mixins'as *;
+@use '../abstracts/variables'as *;
+
+/*
+************
+*************************
+22. Section Title
+******************************************************* 
+*************************************************************** */
+
+.section-title {
+    position: relative;
+    margin-bottom: 60px;
+
+    & h2 {
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 14px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 15%;
+            height: 2px;
+            background-color: $theme-color;
+            left: 0;
+            right: 0;
+            text-align: center;
+            bottom: 0;
+            margin: 0 auto;
+        }
+
+        & span {
+            color: $theme-color;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 15px;
+        background-color: $theme-color;
+        border-radius: 50%;
+        margin-top: 40px;
+        margin-right: 2px;
+    }
+}

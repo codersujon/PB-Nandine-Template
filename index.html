@@ -27,7 +27,7 @@
 
 <body>
     <!-- Header Start -->
-    <header class="header" data-background="assets/img/bg/header-bg.jpg" data-overlay="dark" data-opacity="2">
+    <header class="header" data-background="assets/img/bg/header-bg.jpg" data-overlay="dark" data-opacity="2" id="home">
         <div class="header__menu menu-bg pt-20 pb-20 position-fixed">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
@@ -41,9 +41,9 @@
                     <div class="col-xl-10">
                         <nav class="main-menu f-right">
                             <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
+                                <li><a href="#home">home</a></li>
+                                <li><a href="#about">about</a></li>
+                                <li><a href="#services">services</a></li>
                                 <li><a href="#">skill</a></li>
                                 <li><a href="#">portfolio</a></li>
                                 <li><a href="#">team</a></li>
@@ -76,9 +76,114 @@
     <!-- Header End -->
 
     <!-- Main Start -->
-    <!-- Main End -->
     <main>
-
+        <section class="about pt-100 pb-100" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-60">
+                            <h2 class="uppercase">About <span>Us</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__content">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="about__img">
+                                <img src="assets/img/about-me.jpg" alt="about__img">
+                                <div class="about__socials text-center">
+                                    <h3 class="m-0 text-white uppercase">hanly</h3>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-google"></i></a>
+                                    <a href="#"><i class="fab fa-github-alt"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8">
+                            <div class="about__right">
+                                <h3>I’m a Freelancer and Webdeveloper</h3>
+                                <p class="mb-30"><strong>This is Photoshop's version  of Lorem Ipsum. </strong>   Proin gravida nibh vel velit auctor aliquet. Aenean <br> sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. <br> Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. <br> Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat Morbi accumsan <br> ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat </p>
+                                <p class="mb-30"><strong>This is Photoshop's version  of Lorem Ipsum.</strong> Proin gravida nibh vel velit auctor <br> aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat <br> ipsum, nec sagittis sem nibh id elit. Duis sed </p>
+                                <div class="about__btn">
+                                    <a href="" class="nan-btn">
+                                        Resume / Cv
+                                        <i class="fas fa-download"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="play pt-120 pb-120" data-background="assets/img/bg/about-us-bg.jpg" data-overlay="dark" data-opacity="3">
+            <div class="container">
+                <div class="play__content text-center">
+                    <h2 class="text-white mb-50">Want to Know More About Us ?</h2>
+                    <div class="play__btn">
+                        <a href="https://www.youtube.com/watch?v=-yUOnW7yyss">
+                            <i class="fas fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services pt-100 pb-100" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center mb-60">
+                        <h2 class="uppercase">Our <span>Services</span></h2>
+                    </div>
+                </div>
+                <div class="services__content">
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="services__item text-center">
+                                <i class="fas fa-laptop"></i>
+                                <h3 class="mt-30 mb-10">Web Design</h3>
+                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="services__item mb-40 text-center">
+                                <i class="fas fa-alien-monster"></i>
+                                <h3 class="mt-30 mb-10">Graphic Design</h3>
+                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="services__item mb-40 text-center">
+                                <i class="fas fa-code"></i>
+                                <h3 class="mt-30 mb-10">Web Development</h3>
+                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="services__item mb-40 text-center">
+                                <i class="fas fa-comments"></i>
+                                <h3 class="mt-30 mb-10">Live Support</h3>
+                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="services__item mb-40 text-center">
+                                <i class="fab fa-chrome"></i>
+                                <h3 class="mt-30 mb-10">Support</h3>
+                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-4">
+                            <div class="services__item mb-40 text-center">
+                                <i class="fas fa-cloud-download"></i>
+                                <h3 class="mt-30 mb-10">Download</h3>
+                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- Main End -->
 
@@ -114,7 +219,6 @@
         </div>
     </footer>
     <!-- Footer End -->
-
 
     <!-- JS Here -->
     <script src="assets/js/jquery.min.js"></script>

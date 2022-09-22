@@ -1,0 +1,29 @@
+@use '../abstracts/mixins'as *;
+@use '../abstracts/variables'as *;
+
+/*
+************
+*************************
+22. Services
+******************************************************* 
+*************************************************************** */
+
+.services {
+    &__content {}
+
+    &__item {
+        & i {
+            font-size: 48px;
+            color: $theme-color;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        & p{
+            color: #252525;
+        }
+    }
+}
