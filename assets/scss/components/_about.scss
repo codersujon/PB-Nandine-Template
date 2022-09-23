@@ -28,6 +28,7 @@
 
         &:hover {
             cursor: pointer;
+
             & .about__socials {
                 display: block;
                 transition: .3s;
@@ -35,7 +36,7 @@
                 -moz-transition: .3s;
                 -ms-transition: .3s;
                 -o-transition: .3s;
-}
+            }
         }
     }
 
