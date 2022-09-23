@@ -1,0 +1,62 @@
+@use '../abstracts/mixins'as *;
+@use '../abstracts/variables'as *;
+
+/*
+************
+*************************
+22. Skill
+******************************************************* 
+*************************************************************** */
+
+.skills {
+    &__left {
+        & h3 {
+            font-size: 24px;
+        }
+    }
+
+    &__right {
+        & h3 {
+            font-size: 24px;
+            color: #1b1b1b;
+            font-weight: 400;
+            font-family: $raleway;
+        }
+    }
+
+    &__item {
+        & label {
+            margin-bottom: 5px;
+        }
+
+        & .pro {
+            background-color: #000;
+            height: 18px;
+            border-radius: 30px;
+            width: 100%;
+            position: relative;
+
+            &__bar {
+                position: relative;
+                content: '';
+                background-color: $theme-color;
+                border-radius: 30px;
+                height: 10px;
+                left: 10px;
+                right: 10px;
+                top: 5px;
+                bottom: 5px;
+            }
+
+            & span{
+                position: absolute;
+                content: '';
+                right: 0;
+                top: 0;
+                color: $white;
+                font-size: 12px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

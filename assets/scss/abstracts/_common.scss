@@ -185,10 +185,11 @@ hr {
 }
 
 label {
-    color: $heading-color;
+    color: #2c2b2b;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
+    font-family: $raleway;
 }
 
 *::-moz-selection {
@@ -426,7 +427,7 @@ textarea:focus::placeholder {
     background: $theme-color;
 }
 
-.gray-bg{
+.gray-bg {
     background: $gray;
 }
 

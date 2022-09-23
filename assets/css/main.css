@@ -188,10 +188,11 @@ hr {
 }
 
 label {
-  color: #000;
+  color: #2c2b2b;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
+  font-family: "Raleway", sans-serif;
 }
 
 *::-moz-selection {
@@ -1866,7 +1867,7 @@ textarea:focus::placeholder {
   font-size: 36px;
 }
 .play__btn a {
-  font-size: 32px;
+  font-size: 25px;
   color: #fff;
   border: 2px solid #fff;
   width: 60px;
@@ -1901,6 +1902,52 @@ textarea:focus::placeholder {
 }
 .services__item p {
   color: #252525;
+}
+
+/*
+************
+*************************
+22. Skill
+******************************************************* 
+*************************************************************** */
+.skills__left h3 {
+  font-size: 24px;
+}
+.skills__right h3 {
+  font-size: 24px;
+  color: #1b1b1b;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+.skills__item label {
+  margin-bottom: 5px;
+}
+.skills__item .pro {
+  background-color: #000;
+  height: 18px;
+  border-radius: 30px;
+  width: 100%;
+  position: relative;
+}
+.skills__item .pro__bar {
+  position: relative;
+  content: "";
+  background-color: #fe320a;
+  border-radius: 30px;
+  height: 10px;
+  left: 10px;
+  right: 10px;
+  top: 5px;
+  bottom: 5px;
+}
+.skills__item .pro span {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 10px;
 }
 
 .footer .socials a {
