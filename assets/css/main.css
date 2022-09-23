@@ -1984,6 +1984,43 @@ textarea:focus::placeholder {
   font-family: "Raleway", sans-serif;
 }
 
+/*
+************
+*************************
+22. Portfolio
+******************************************************* 
+*************************************************************** */
+.portfolio__menu nav a {
+  font-size: 18px;
+  color: #000;
+  padding: 10px 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.portfolio__menu nav a:hover {
+  background-color: #fe320a;
+  color: #fff;
+}
+.portfolio__img {
+  position: relative;
+}
+.portfolio__img::before {
+  position: absolute;
+  content: "\f7b6";
+  background-color: rgb(158, 38, 55);
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  opacity: 0.549;
+  visibility: hidden;
+  transition: 0.3s;
+  color: #fff;
+}
+.portfolio__img:hover.portfolio__img::before {
+  visibility: visible;
+}
+
 .footer .socials a {
   padding: 9px;
   font-size: 18px;

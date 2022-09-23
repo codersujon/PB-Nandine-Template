@@ -1,0 +1,53 @@
+@use '../abstracts/mixins'as *;
+@use '../abstracts/variables'as *;
+
+/*
+************
+*************************
+22. Portfolio
+******************************************************* 
+*************************************************************** */
+
+
+.portfolio {
+    &__menu {
+        & nav {
+            & a {
+                font-size: 18px;
+                color: #000;
+                padding: 10px 18px;
+                font-weight: 600;
+                text-transform: capitalize;
+                transition: .3s;
+
+                &:hover {
+                    background-color: $theme-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__img {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '\f7b6';
+            background-color: rgb(158, 38, 55);
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            opacity: 0.549;
+            visibility: hidden;
+            transition: .3s;
+            color: $white;
+        }
+
+        &:hover {
+            &.portfolio__img::before {
+                visibility: visible;
+            }
+        }
+    }
+}
