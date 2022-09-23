@@ -1950,6 +1950,40 @@ textarea:focus::placeholder {
   margin-right: 10px;
 }
 
+/*
+************
+*************************
+22. Counter
+******************************************************* 
+*************************************************************** */
+.counter__item {
+  position: relative;
+  z-index: 10;
+}
+.counter__item i {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 22px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.counter__item span {
+  display: block;
+  font-weight: 500px;
+  color: #fff;
+  font-size: 30px;
+  margin: 10px 0;
+}
+.counter__item h4 {
+  font-weight: 600;
+  font-size: 26px;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Raleway", sans-serif;
+}
+
 .footer .socials a {
   padding: 9px;
   font-size: 18px;
