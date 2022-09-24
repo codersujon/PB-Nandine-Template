@@ -1,0 +1,61 @@
+@use '../abstracts/mixins'as *;
+@use '../abstracts/variables'as *;
+
+/*
+************
+*************************
+22. Contact
+******************************************************* 
+*************************************************************** */
+
+.contact {
+    &__info {
+        position: relative;
+        z-index: 10;
+    }
+
+
+    &__item {
+        display: flex;
+
+        & input {
+            width: 100%;
+            height: 46px;
+            border: 2px solid $white;
+            background: transparent;
+            padding: 0 25px;
+            border-radius: 5px;
+            color: $theme-color;
+
+            &:first-child {
+                margin-right: 30px;
+                margin-bottom: 30px;
+            }
+
+            &::placeholder {
+                color: $white;
+            }
+        }
+    }
+
+    & textarea {
+        width: 100%;
+        height: 220px;
+        border: 2px solid $white;
+        background: transparent;
+        padding: 25px;
+        border-radius: 5px;
+        color: $theme-color;
+        margin-bottom: 30px;
+    }
+
+    & button {
+        color: $white;
+        font-size: 20px;
+        border-radius: 5px;
+
+        & i {
+            margin-left: 8px;
+        }
+    }
+}

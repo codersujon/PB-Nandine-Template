@@ -2075,6 +2075,123 @@ textarea:focus::placeholder {
   color: #1a213e;
 }
 
+.client__content {
+  position: relative;
+  z-index: 10;
+}
+.client__content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.client__content h4 {
+  font-size: 18px;
+}
+.client__content p {
+  font-weight: 14px;
+  padding: 0 50px;
+}
+
+/*
+************
+*************************
+22. Blog
+******************************************************* 
+*************************************************************** */
+.blog__item {
+  box-shadow: 0px 0px 24px 0px rgba(198, 193, 193, 0.75);
+}
+.blog__img {
+  position: relative;
+}
+.blog__img::before {
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  content: "";
+  background-color: #464646;
+  bottom: 0;
+}
+.blog__content {
+  padding: 25px;
+}
+.blog__content h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.blog__content span {
+  font-size: 12px;
+  color: #656161;
+}
+.blog__content span i {
+  color: #f89395;
+}
+.blog__content p {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  color: #433f3f;
+}
+.blog__btn a {
+  font-size: 12px;
+  font-weight: 600px;
+  background-color: #252525;
+  color: #fff;
+  font-style: italic;
+  padding: 10px 13px;
+  transition: 0.3s;
+}
+.blog__btn a:hover {
+  background-color: #fe320a;
+}
+
+/*
+************
+*************************
+22. Contact
+******************************************************* 
+*************************************************************** */
+.contact__info {
+  position: relative;
+  z-index: 10;
+}
+.contact__item {
+  display: flex;
+}
+.contact__item input {
+  width: 100%;
+  height: 46px;
+  border: 2px solid #fff;
+  background: transparent;
+  padding: 0 25px;
+  border-radius: 5px;
+  color: #fe320a;
+}
+.contact__item input:first-child {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.contact__item input::placeholder {
+  color: #fff;
+}
+.contact textarea {
+  width: 100%;
+  height: 220px;
+  border: 2px solid #fff;
+  background: transparent;
+  padding: 25px;
+  border-radius: 5px;
+  color: #fe320a;
+  margin-bottom: 30px;
+}
+.contact button {
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.contact button i {
+  margin-left: 8px;
+}
+
 .footer .socials a {
   padding: 9px;
   font-size: 18px;
